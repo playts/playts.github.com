@@ -1,3 +1,3 @@
-这里我的Blog，非常简单。
+这里我的 Blog 非常简单。
 
-playts.giehub.com
+http://playts.github.com
