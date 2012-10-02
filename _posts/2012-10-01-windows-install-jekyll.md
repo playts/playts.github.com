@@ -40,14 +40,13 @@ https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229
 
 建立文件 index.html ，内容如下：
 
-{% raw %}
+    {% raw %}
     ---
     layout: default
     title: Home
     ---
     <div class="page-front">
     <h1 class="title">Blog Posts</h1>
-
     {% for post in site.posts limit: 5 %}
       <div class="post">
         <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
@@ -56,7 +55,7 @@ https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229
       </div>
     {% endfor %}
     </div>
-{% endraw %}
+    {% endraw %}
 
 当然你也可以自行修改它
 
@@ -66,7 +65,7 @@ https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229
 
 内容如下：
 
-{% raw %}
+    {% raw %}
     <!DOCTYPE html>
     <html>
     <head>
@@ -77,15 +76,14 @@ https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229
     {{ content }}
     </body>
     </html>
-{% endraw %}
+    {% endraw %}
 
 建立文件 `_layouts\post.html`
 
-{% raw %}
+    {% raw %}
     ---
     layout: default
     ---
-
     <div class="post">
       <div class="title">
         <h1>{{ page.title }}</h1>
@@ -95,7 +93,7 @@ https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229
       {{ content }}
       </div>
     </div>
-{% endraw %}
+    {% endraw %}
 
 拟写一篇测试文章
 
