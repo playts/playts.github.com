@@ -10,6 +10,8 @@ categories:
 1. 假定导出的文件名为：`my-address-book.csv`
 2. 确定你的.vimrc文件中 设置了`set fencs=ucs-bom,utf-8,cp936`
 
+接着在终端执行下面步骤：
+
 	vim my-address-book.csv
 	:set fenc=utf-8
 	:wq
